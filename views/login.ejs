@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<main class="flex-grow-1 d-flex justify-content-center">
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="box-shadow">
+      <h3 class="mb-4">Welcome Back👋</h3>
+      <form class="d-flex flex-column" action="/login" method="POST">
+        <input
+          class="form-control mb-3"
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+        />
+
+        <input
+          class="form-control mb-3"
+          type="password"
+          name="password"
+          placeholder="Password"
+          required
+        />
+        <% if (typeof errorMessage !== 'undefined') { %>
+        <small class="text-danger mb-4"><%= errorMessage %></small>
+        <% } %>
+        <button class="py-2 btn btn-primary" type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<%- include("partials/footer") %>

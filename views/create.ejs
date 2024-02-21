@@ -1,0 +1,63 @@
+<%- include("partials/header") %>
+
+<main class="flex-grow-1 d-flex justify-content-center">
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="box-shadow">
+      <h3 class="mb-4">
+        <%= blog ? "Edit Your Story✍️" : "Share Your Story✍️" %>
+      </h3>
+      <form
+        class="d-flex flex-column"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          class="form-control mb-3"
+          type="text"
+          name="title"
+          value="<%= blog ? blog.title : '' %>"
+          placeholder="Blog Title"
+          required
+        />
+        <textarea
+          class="form-control mb-3"
+          name="content"
+          placeholder="Blog Story"
+          rows="4"
+          required
+        >
+<%= blog ? blog.content : '' %></textarea
+        >
+
+        <div class="custom-file mb-3">
+          <input
+            type="file"
+            name="image"
+            class="custom-file-input"
+            id="customFile"
+          />
+          <label class="custom-file-label" for="customFile"
+            ><%= blog && blog.imagePath ? 'Change file' : 'Choose file'
+            %></label
+          >
+        </div>
+        <button class="py-2 btn btn-primary" type="submit">
+          <%= blog ? 'Update' : 'Submit' %>
+        </button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<!-- Displays Upload Image Name -->
+<script>
+  document
+    .getElementById("customFile")
+    .addEventListener("change", function (e) {
+      var fileName = e.target.files[0].name;
+      var nextSibling = e.target.nextElementSibling;
+      nextSibling.innerText = fileName;
+    });
+</script>
+
+<%- include("partials/footer") %>

@@ -1,0 +1,26 @@
+{
+  "name": "mongoserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "connect-mongo": "^5.1.0",
+    "dotenv": "^16.4.4",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^7.5.2",
+    "multer": "^1.4.5-lts.1",
+    "node": "^20.6.0",
+    "path": "^0.12.7",
+    "validator": "^13.11.0"
+  }
+}

@@ -1,0 +1,32 @@
+<%- include("partials/header") %>
+
+<main class="flex-grow-1 d-flex justify-content-center">
+  <div class="d-flex justify-content-center align-items-center">
+    <div class="box-shadow">
+      <h1 name="img-fluid mb-4"><%= blog.title %></h1>
+      <img
+        class="my-4 rounded"
+        src="<%= blog.imagePath %>"
+        style=""
+        alt="Blog Picture"
+      />
+      <div class="d-flex flex-column pt-2 pb-4">
+        <small name="author"><%= blog.author %></small>
+        <small><%= blog.date %></small>
+      </div>
+
+      <pre name="content"><%= blog.content %></pre>
+
+      <% if (username === blog.author) { %>
+      <button type="button" class="btn btn-primary mt-3">
+        <a href="/edit/<%= blog._id %>">Edit</a>
+      </button>
+      <button type="button" class="btn btn-danger mt-3">
+        <a href="/blog/delete/<%= blog._id %>">Delete</a>
+      </button>
+      <% } %>
+    </div>
+  </div>
+</main>
+
+<%- include("partials/footer") %>
