@@ -21,9 +21,9 @@ Follow these steps to set up and run the project on your local machine.
 
 Ensure you have the following installed:
 
-- 🟢 **Node.js**
-- 📦 **npm (Node Package Manager)**
-- 🗄️ **MongoDB**
+- **Node.js**
+- **npm (Node Package Manager)**
+- **MongoDB**
 
 ### 🛠 Installation
 
