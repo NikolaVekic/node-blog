@@ -1,4 +1,4 @@
-#📝 Blog App
+# 📝 Blog App
 
 ![Blog](https://github.com/NikolaVekic/node-blog/assets/55920607/2a317aec-e02f-454f-a3b9-8e933a6f2e8e)
 
