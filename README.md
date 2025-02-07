@@ -2,10 +2,8 @@
 
 ![Blog](https://github.com/NikolaVekic/node-blog/assets/55920607/2a317aec-e02f-454f-a3b9-8e933a6f2e8e)
 
-A blogging platform built with **Node.js**. This project leverages **Express.js** for server-side logic, **EJS** for templating, and **MongoDB** for data storage, providing a solid foundation for building and deploying dynamic blog websites.
-
 ## 🏯 Sakura Stories
-![Blog](https://github.com/NikolaVekic/node-blog/assets/55920607/2a317aec-e02f-454f-a3b9-8e933a6f2e8e)
+A blogging platform built with **Node.js**. This project leverages **Express.js** for server-side logic, **EJS** for templating, and **MongoDB** for data storage, providing a solid foundation for building and deploying dynamic blog websites.
 
 ## ✨ Features
 
