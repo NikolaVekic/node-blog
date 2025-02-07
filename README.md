@@ -30,7 +30,7 @@ Ensure you have the following installed:
 1️⃣ Clone the repository:
 
 ```bash
-git clone https://github.com/NikolaVekic/node-blog.git
+git clone https://github.com/NikolaVekic/blog-app.git
 ```
 
 2️⃣ Navigate to the project directory:
